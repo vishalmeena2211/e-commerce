@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.cursor-circle {
+  width: 16px; /* Adjust the size as needed */
+  height: 16px; /* Adjust the size as needed */
+  background-color: transparent;
+  border: 2px solid rgb(3, 170, 3); /* Use the color you defined in your theme */
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; /* This prevents the cursor from interfering with elements */
+  transform: translate(-50%, 50%);
+  top: -8px;
+  left: -8px;
+
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
